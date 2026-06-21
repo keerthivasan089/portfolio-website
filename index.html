@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Keerthi Vasan P — Data Analyst & Aspiring Data Engineer. Portfolio showcasing SQL, Power BI, Excel, Python projects and internship experience." />
+  <meta name="keywords" content="Data Analyst, Data Engineer, SQL, Power BI, Excel, Python, Portfolio, Keerthi Vasan" />
+  <meta name="author" content="Keerthi Vasan P" />
+  <title>Keerthi Vasan P | Data Analyst Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== PARTICLE CANVAS ===== -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo"><span class="logo-pk">PK</span><span class="logo-sub">- THE DATA ANALYST</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#freelance" class="nav-link">Freelance</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link cta-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Internship &amp; Opportunities
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Keerthi Vasan P</span>
+      </h1>
+      <div class="hero-role">
+        <span class="role-text" id="typingText"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        Turning raw data into decisions that matter. Data Analyst Intern at LocalSM, building the foundation for tomorrow's data engineering.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">Internships</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">4+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">8.0</span>
+          <span class="stat-label">CGPA</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">100</span>
+          <span class="stat-label">Days on LinkedIn</span>
+        </div>
+      </div>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary" id="view-projects-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          View Projects
+        </a>
+          <a href="https://drive.google.com/file/d/1KsIl7KfuLI6I3q6hkuo-hZ6othkqvrar/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary" id="resume-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume
+        </a>
+        <a href="#contact" class="btn btn-ghost" id="contact-hero-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Contact Me
+        </a>
+      </div>
+    </div>
+
+    <!-- Profile photo and badges -->
+    <div class="hero-visual">
+      <div class="hero-photo-container animate-on-scroll">
+        <div class="hero-photo-glow"></div>
+        <div class="hero-photo-border">
+          <img src="profile.jpg" alt="Keerthi Vasan P" class="hero-photo">
+        </div>
+      </div>
+      <!-- Badges below photo, not overlaying -->
+      <div class="hero-badges-container animate-on-scroll">
+        <div class="hero-badge">
+          <span class="badge-icon">📊</span>
+          <div class="badge-text">
+            <h4>Data Analyst</h4>
+            <p>Ready to Analyze</p>
+          </div>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-icon">⚡</span>
+          <div class="badge-text">
+            <h4>Freelancer</h4>
+            <p>1st Project Free</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-wheel"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">The Story Behind the Data</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-intro">
+            I'm <strong>Keerthi Vasan P</strong>, a 3rd-year Computer Science Engineering student at Adhiyamaan College of Engineering, Hosur, with a CGPA of <span class="highlight">8.0</span>.
+          </p>
+          <p>
+            My journey into data started with a simple curiosity: <em>why do businesses make the decisions they make?</em> I soon discovered that the answer always lies in data. From there, I dove into SQL, Excel, Power BI, and Python — not just to learn tools, but to understand how data drives real business outcomes.
+          </p>
+          <p>
+            I've interned at <strong>UV Netware Private Limited</strong> as a Database Analyst and currently work as a <strong>Data Analyst Intern at LocalSM</strong>, where I analyze real product and user behavior data to support business decisions.
+          </p>
+          <p>
+            My long-term goal is to become a <strong>Data Engineer</strong> — building scalable data pipelines and systems that power large-scale analytics. I document my learning journey as part of a <span class="highlight">100 Days of Data Analyst</span> series on LinkedIn.
+          </p>
+          <div class="about-tags">
+            <span class="tag">🎯 Problem Solver</span>
+            <span class="tag">⚡ Fast Learner</span>
+            <span class="tag">📊 Data-Driven</span>
+            <span class="tag">🚀 Aspiring Data Engineer</span>
+            <span class="tag">💡 Business Thinker</span>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="profile-card">
+            <div class="profile-avatar">
+              <div class="avatar-ring"></div>
+              <img src="profile_secondary.jpg" alt="Keerthi Vasan P" class="avatar-img">
+            </div>
+            <div class="profile-info">
+              <h3>Keerthi Vasan P</h3>
+              <p>Data Analyst Intern @ LocalSM</p>
+              <div class="profile-meta">
+                <div class="meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Hosur, Tamil Nadu
+                </div>
+                <div class="meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  vasankeerthi089@gmail.com
+                </div>
+                <div class="meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                  B.E. CSE | 2024–2028
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vision-card">
+            <div class="vision-icon">💡</div>
+            <p class="vision-quote">"I believe data has the power to drive innovation and better decision-making. My goal is to evolve from analyzing data today to engineering scalable data solutions tomorrow."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-label">Work Experience</div>
+      <h2 class="section-title">My Professional Journey</h2>
+      <div class="timeline">
+        <!-- LocalSM -->
+        <div class="timeline-item animate-on-scroll" id="exp-localsm">
+          <div class="timeline-dot active-dot"></div>
+          <div class="exp-card active-exp">
+            <div class="exp-header">
+              <div class="exp-company-info">
+                <div class="exp-logo localsm-logo">LSM</div>
+                <div>
+                  <h3 class="exp-title">Data Analyst Intern</h3>
+                  <p class="exp-company">LocalSM</p>
+                </div>
+              </div>
+              <div class="exp-meta">
+                <div class="exp-badge current-badge">Current</div>
+                <div class="exp-duration">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  June 2026 – Present
+                </div>
+                <div class="exp-location">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Jabalpur, MP (Remote)
+                </div>
+              </div>
+            </div>
+            <p class="exp-desc">
+              LocalSM is an Indian hyperlocal super-commerce platform enabling users to buy, sell, and resell products within their local communities.
+            </p>
+            <div class="exp-section-label">Key Responsibilities</div>
+            <ul class="exp-list">
+              <li>Analyzing real product, user, and business data to derive actionable insights</li>
+              <li>Creating reports and dashboards to monitor key business metrics and platform KPIs</li>
+              <li>Performing data cleaning, validation, and transformation on live datasets</li>
+              <li>Working cross-functionally with product and marketing teams on data-driven decisions</li>
+              <li>Writing SQL queries for data extraction, filtering, and business reporting</li>
+              <li>Developing Python-based analysis scripts and data visualizations</li>
+            </ul>
+            <div class="exp-tech">
+              <span class="tech-chip">SQL</span>
+              <span class="tech-chip">Python</span>
+              <span class="tech-chip">Power BI</span>
+              <span class="tech-chip">Excel</span>
+              <span class="tech-chip">Data Analysis</span>
+              <span class="tech-chip">KPI Tracking</span>
+            </div>
+            <div class="offer-ref">Offer Letter No: LSM-INT-2026-DATA-002 | Reporting to: Founder & CEO</div>
+          </div>
+        </div>
+
+        <!-- UV Netware -->
+        <div class="timeline-item animate-on-scroll" id="exp-uvnpl">
+          <div class="timeline-dot"></div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div class="exp-company-info">
+                <div class="exp-logo uvnpl-logo">UV</div>
+                <div>
+                  <h3 class="exp-title">Database Analyst Intern</h3>
+                  <p class="exp-company">UV Netware Private Limited</p>
+                </div>
+              </div>
+              <div class="exp-meta">
+                <div class="exp-badge completed-badge">Completed</div>
+                <div class="exp-duration">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  Feb 2026 – Apr 2026 (3 Months)
+                </div>
+                <div class="exp-location">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Ahmedabad (Remote)
+                </div>
+              </div>
+            </div>
+            <p class="exp-desc">
+              Worked with structured and semi-structured real business datasets, responsible for data cleaning, transformation, and Firebase database integration.
+            </p>
+            <div class="exp-section-label">Key Responsibilities</div>
+            <ul class="exp-list">
+              <li>Cleaned and organized large real business datasets for analysis readiness</li>
+              <li>Wrote SQL queries for data extraction, filtering, and reporting workflows</li>
+              <li>Converted Excel data to structured JSON format using Python</li>
+              <li>Integrated processed data into Firebase Realtime Database</li>
+              <li>Performed data validation, error detection, and inconsistency removal</li>
+            </ul>
+            <div class="exp-tech">
+              <span class="tech-chip">SQL</span>
+              <span class="tech-chip">Python</span>
+              <span class="tech-chip">Firebase</span>
+              <span class="tech-chip">JSON</span>
+              <span class="tech-chip">Excel</span>
+              <span class="tech-chip">Data Cleaning</span>
+            </div>
+            <div class="offer-ref">Ref: UVNPL/DA/048 | Certificate ID: 037</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label">My Work</div>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-github-cta animate-on-scroll">
+        <p>Explore dashboards, SQL scripts, and data projects on GitHub.</p>
+        <a href="https://github.com/keerthivasan089?tab=repositories" target="_blank" rel="noopener" class="btn btn-secondary github-all-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          View All Repositories
+        </a>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card animate-on-scroll" id="proj-ecommerce" data-github="https://github.com/keerthivasan089" tabindex="0" role="link" aria-label="Open E-Commerce Sales Dashboard on GitHub">
+          <div class="project-header">
+            <div class="project-icon">📊</div>
+            <div class="project-links">
+              <a href="https://github.com/keerthivasan089?tab=repositories" target="_blank" rel="noopener" class="proj-link" aria-label="View all GitHub repositories">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">E-Commerce Sales Dashboard</h3>
+          <div class="project-tools">
+            <span class="tool-badge powerbi">Power BI</span>
+            <span class="tool-badge excel">Excel</span>
+            <span class="tool-badge dax">DAX</span>
+          </div>
+          <p class="project-desc">
+            Built a 4-page interactive Power BI dashboard analyzing multi-table e-commerce sales data. Leveraged DAX to create KPI metrics and uncover business-critical trends.
+          </p>
+          <div class="project-insights">
+            <div class="insight-title">Key Insights</div>
+            <div class="insight-grid">
+              <div class="insight-item">
+                <div class="insight-icon">📈</div>
+                <span>Sales KPIs</span>
+              </div>
+              <div class="insight-item">
+                <div class="insight-icon">🏆</div>
+                <span>Top Products</span>
+              </div>
+              <div class="insight-item">
+                <div class="insight-icon">🗺️</div>
+                <span>Regional Trends</span>
+              </div>
+              <div class="insight-item">
+                <div class="insight-icon">👥</div>
+                <span>Customer Behavior</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card animate-on-scroll" id="proj-superstore" data-github="https://github.com/keerthivasan089" tabindex="0" role="link" aria-label="Open Superstore Sales Analysis on GitHub">
+          <div class="project-header">
+            <div class="project-icon">🏪</div>
+            <div class="project-links">
+              <a href="https://github.com/keerthivasan089?tab=repositories" target="_blank" rel="noopener" class="proj-link" aria-label="View all GitHub repositories">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Superstore Sales Analysis</h3>
+          <div class="project-tools">
+            <span class="tool-badge powerbi">Power BI</span>
+            <span class="tool-badge excel">Excel</span>
+            <span class="tool-badge dax">DAX</span>
+          </div>
+          <p class="project-desc">
+            Interactive dashboard across regions, categories, and customer segments with DAX-based profit ratio metrics. Identified underperforming segments and high-value revenue drivers.
+          </p>
+          <div class="project-insights">
+            <div class="insight-title">Key Insights</div>
+            <div class="insight-grid">
+              <div class="insight-item">
+                <div class="insight-icon">💰</div>
+                <span>Profit Ratios</span>
+              </div>
+              <div class="insight-item">
+                <div class="insight-icon">🎯</div>
+                <span>Underperformers</span>
+              </div>
+              <div class="insight-item">
+                <div class="insight-icon">📦</div>
+                <span>Category Mix</span>
+              </div>
+              <div class="insight-item">
+                <div class="insight-icon">🌍</div>
+                <span>Regional Split</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card animate-on-scroll" id="proj-vrinda" data-github="https://github.com/keerthivasan089" tabindex="0" role="link" aria-label="Open Vrinda Store project on GitHub">
+          <div class="project-header">
+            <div class="project-icon">👗</div>
+            <div class="project-links">
+              <a href="https://github.com/keerthivasan089?tab=repositories" target="_blank" rel="noopener" class="proj-link" aria-label="GitHub profile for Vrinda Store project">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Vrinda Store Annual Sales Dashboard</h3>
+          <div class="project-tools">
+            <span class="tool-badge excel">Excel</span>
+            <span class="tool-badge pivot">Pivot Tables</span>
+          </div>
+          <p class="project-desc">
+            End-to-end Excel dashboard from raw data with pivot tables, slicers, KPI cards, and interactive charts. Generated a clear business recommendation for targeted marketing.
+          </p>
+          <div class="project-insights">
+            <div class="insight-title">Key Findings</div>
+            <ul class="insight-list">
+              <li>Women = <strong>64%</strong> of total sales</li>
+              <li>Top states: Maharashtra, Karnataka, UP</li>
+              <li>Adults 30–49 = biggest segment</li>
+              <li>Amazon, Flipkart, Myntra = <strong>80%</strong> sales</li>
+            </ul>
+          </div>
+          <div class="project-recommendation">
+            💡 <strong>Recommendation:</strong> Target women 30–49 in top 3 states via top 3 platforms
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card animate-on-scroll" id="proj-bank" data-github="https://github.com/keerthivasan089" tabindex="0" role="link" aria-label="Open Bank Loan project on GitHub">
+          <div class="project-header">
+            <div class="project-icon">🏦</div>
+            <div class="project-links">
+              <a href="https://github.com/keerthivasan089?tab=repositories" target="_blank" rel="noopener" class="proj-link" aria-label="GitHub profile for Bank Loan project">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Bank Loan Report Summary Dashboard</h3>
+          <div class="project-tools">
+            <span class="tool-badge excel">Excel</span>
+            <span class="tool-badge intermediate">Intermediate</span>
+          </div>
+          <p class="project-desc">
+            Dark navy-themed multi-view Excel dashboard with KPI cards, donut charts, and dynamic slicers for loan portfolio analysis. Three views: Summary, Overview, and Details.
+          </p>
+          <div class="project-insights">
+            <div class="insight-title">Dashboard KPIs</div>
+            <div class="kpi-grid">
+              <div class="kpi-item">
+                <span class="kpi-val">38.6K</span>
+                <span class="kpi-key">Applications</span>
+              </div>
+              <div class="kpi-item">
+                <span class="kpi-val">$435.8M</span>
+                <span class="kpi-key">Total Funded</span>
+              </div>
+              <div class="kpi-item">
+                <span class="kpi-val good">86.2%</span>
+                <span class="kpi-key">Good Loans</span>
+              </div>
+              <div class="kpi-item">
+                <span class="kpi-val bad">13.8%</span>
+                <span class="kpi-key">Bad Loans</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FREELANCE ===== -->
+  <section id="freelance" class="section">
+    <div class="container">
+      <div class="section-label">Freelance Services</div>
+      <h2 class="section-title">Data Analytics &amp; Job Insights</h2>
+      
+      <!-- Special Launch Offer -->
+      <div class="freelance-banner animate-on-scroll">
+        <div class="banner-badge">SPECIAL LAUNCH OFFER</div>
+        <div class="banner-content">
+          <h3>Your First Data Analytics Project is <span class="gradient-text font-bold">100% FREE!</span></h3>
+          <p>Get professional-grade dashboards, SQL query optimization, or web/job data extraction at no cost for your first order. Subsequent projects at budget-friendly rates.</p>
+        </div>
+        <button onclick="openInquiryModal()" class="btn btn-primary banner-btn">
+          Claim Free Project
+        </button>
+      </div>
+
+      <div class="freelance-intro animate-on-scroll">
+        <p>Whether you need to scrape and analyze job market trends, build business dashboards, or structure messy datasets, I provide high-quality, data-driven freelance solutions. Check out my specialized services below:</p>
+      </div>
+
+      <div class="freelance-grid">
+        <!-- Service 1 -->
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon-wrap">
+            <span class="service-icon">🔍</span>
+          </div>
+          <h3 class="service-title">Job &amp; Market Trend Analysis</h3>
+          <p class="service-desc">Scrape, extract, and analyze job listings or market postings from freelancing sites and job boards. Uncover hiring trends, key skill demands, and salary insights.</p>
+          <ul class="service-points">
+            <li>Custom Web Scraping Scripts</li>
+            <li>Skill &amp; Salary Mapping</li>
+            <li>Job Market Reports</li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon-wrap">
+            <span class="service-icon">📊</span>
+          </div>
+          <h3 class="service-title">Business &amp; KPI Dashboards</h3>
+          <p class="service-desc">Develop interactive, modern Power BI and Microsoft Excel dashboards to track sales, performance, customer behavior, and key business KPIs.</p>
+          <ul class="service-points">
+            <li>DAX Formulas &amp; Modeling</li>
+            <li>Dynamic Pivot Tables &amp; Charts</li>
+            <li>Executive Summary Reports</li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon-wrap">
+            <span class="service-icon">🗃️</span>
+          </div>
+          <h3 class="service-title">Database &amp; Data Pipeline Setup</h3>
+          <p class="service-desc">Clean, structure, and organize messy Excel datasets. Write optimized SQL queries for extraction and integrate your data with Firebase or relational databases.</p>
+          <ul class="service-points">
+            <li>Python Data Cleaning (JSON/CSV)</li>
+            <li>Firebase Realtime DB Integration</li>
+            <li>SQL Query Optimization</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Pricing / Value Props -->
+      <div class="freelance-footer animate-on-scroll">
+        <div class="freelance-badge">Why Work With Me?</div>
+        <div class="val-props">
+          <div class="val-item">
+            <span class="val-check">✓</span>
+            <div>
+              <h4>Ultra-Low Cost</h4>
+              <p>Tailored pricing models for small businesses and recruiters.</p>
+            </div>
+          </div>
+          <div class="val-item">
+            <span class="val-check">✓</span>
+            <div>
+              <h4>First Project Free</h4>
+              <p>Risk-free trial to experience my data analysis quality first-hand.</p>
+            </div>
+          </div>
+          <div class="val-item">
+            <span class="val-check">✓</span>
+            <div>
+              <h4>24/7 Communication</h4>
+              <p>Direct updates via WhatsApp, Email, or Slack throughout the project.</p>
+            </div>
+          </div>
+        </div>
+        <div class="freelance-cta">
+          <button onclick="openInquiryModal()" class="btn btn-primary" id="hire-freelance-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Inquire for Freelance Work
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-label">Technical Arsenal</div>
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="skills-container">
+        <div class="skills-category animate-on-scroll">
+          <h3 class="skills-cat-title">
+            <span class="skills-cat-icon">🗃️</span> Data & Databases
+          </h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">SQL</span><span class="skill-level">Advanced</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">MySQL</span><span class="skill-level">Proficient</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Firebase Realtime DB</span><span class="skill-level">Proficient</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 72%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category animate-on-scroll">
+          <h3 class="skills-cat-title">
+            <span class="skills-cat-icon">📊</span> Business Intelligence
+          </h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Power BI</span><span class="skill-level">Advanced</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Microsoft Excel</span><span class="skill-level">Advanced</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Google Sheets</span><span class="skill-level">Proficient</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Tableau</span><span class="skill-level">Learning</span></div>
+              <div class="skill-bar"><div class="skill-fill learning" style="--fill: 45%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Looker</span><span class="skill-level">Learning</span></div>
+              <div class="skill-bar"><div class="skill-fill learning" style="--fill: 35%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category animate-on-scroll">
+          <h3 class="skills-cat-title">
+            <span class="skills-cat-icon">🐍</span> Programming & Data
+          </h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Python</span><span class="skill-level">Proficient</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">DAX (Power BI)</span><span class="skill-level">Advanced</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 82%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">JSON & Data Formats</span><span class="skill-level">Proficient</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 78%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category animate-on-scroll">
+          <h3 class="skills-cat-title">
+            <span class="skills-cat-icon">🧠</span> Analytical Skills
+          </h3>
+          <div class="skills-chips">
+            <span class="skill-chip">Data Cleaning</span>
+            <span class="skill-chip">EDA</span>
+            <span class="skill-chip">Dashboard Design</span>
+            <span class="skill-chip">KPI Development</span>
+            <span class="skill-chip">Data Validation</span>
+            <span class="skill-chip">Business Intelligence</span>
+            <span class="skill-chip">Reporting</span>
+            <span class="skill-chip">Data Transformation</span>
+            <span class="skill-chip">Statistical Analysis</span>
+            <span class="skill-chip">Data Modeling</span>
+            <span class="skill-chip">Pivot Tables</span>
+            <span class="skill-chip">Data Storytelling</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-label">Credentials</div>
+      <h2 class="section-title">Certifications & Awards</h2>
+      <div class="cert-grid">
+        <div class="cert-card animate-on-scroll" id="cert-gentrobytes">
+          <div class="cert-ribbon"></div>
+          <div class="cert-icon-wrap">
+            <div class="cert-icon">🎓</div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer">Gentrobytes AI Labs</div>
+            <h3 class="cert-title">Data Analytics Certification</h3>
+            <p class="cert-desc">Comprehensive theory and hands-on training in SQL, Power BI, Excel, Data Visualization, Dashboard Development, and Business Analytics.</p>
+            <div class="cert-skills">
+              <span>SQL</span><span>Power BI</span><span>Excel</span><span>Data Visualization</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card animate-on-scroll" id="cert-uvnpl">
+          <div class="cert-ribbon"></div>
+          <div class="cert-icon-wrap">
+            <div class="cert-icon">🏅</div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer">UV Netware Private Limited</div>
+            <h3 class="cert-title">Database Analyst Internship</h3>
+            <p class="cert-desc">Official internship completion certificate from UVNPL. Certified for database management, data cleaning, Python data processing, and Firebase integration.</p>
+            <div class="cert-skills">
+              <span>Database Management</span><span>Python</span><span>Firebase</span>
+            </div>
+            <div class="cert-ref">Certificate ID: 037 | Ref: UVNPL/DA/048</div>
+          </div>
+        </div>
+
+        <div class="cert-card animate-on-scroll" id="cert-deloitte">
+          <div class="cert-ribbon deloitte-ribbon"></div>
+          <div class="cert-icon-wrap">
+            <div class="cert-icon">🏢</div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer">Deloitte (via Forage)</div>
+            <h3 class="cert-title">Data Analytics Job Simulation</h3>
+            <p class="cert-desc">Completed practical tasks in Data Analysis and Forensic Technology during a virtual job simulation program from May–June 2026.</p>
+            <div class="cert-skills">
+              <span>Data Analysis</span><span>Forensic Technology</span><span>Job Simulation</span>
+            </div>
+            <div class="cert-ref">Completed: June 1, 2026 | Issued by Forage</div>
+            <div class="cert-status achieved">✅ Completed</div>
+          </div>
+        </div>
+
+        <div class="cert-card animate-on-scroll" id="cert-linkedin100">
+          <div class="cert-ribbon gold-ribbon"></div>
+          <div class="cert-icon-wrap">
+            <div class="cert-icon">🏆</div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer">LinkedIn</div>
+            <h3 class="cert-title">100 Days of Data Analyst</h3>
+            <p class="cert-desc">Completed a self-driven 100-day learning journey in data analysis, consistently sharing progress, projects, and insights with the LinkedIn data community.</p>
+            <div class="cert-skills">
+              <span>Consistency</span><span>Community</span><span>Data Analysis</span>
+            </div>
+            <div class="cert-status achieved">✅ Achieved</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-label">Academic Background</div>
+      <h2 class="section-title">Education</h2>
+      <div class="edu-card animate-on-scroll" id="edu-ace">
+        <div class="edu-left">
+          <div class="edu-logo">ACE</div>
+          <div class="edu-timeline-bar"></div>
+        </div>
+        <div class="edu-right">
+          <div class="edu-header">
+            <div>
+              <h3 class="edu-degree">Bachelor of Engineering (B.E.)</h3>
+              <p class="edu-field">Computer Science and Engineering</p>
+              <p class="edu-college">Adhiyamaan College of Engineering, Hosur</p>
+            </div>
+            <div class="edu-meta">
+              <div class="edu-cgpa">
+                <span class="cgpa-val">8.0</span>
+                <span class="cgpa-label">CGPA</span>
+              </div>
+              <div class="edu-year">2024 – 2028</div>
+              <div class="edu-year-label">Currently 3rd Year</div>
+            </div>
+          </div>
+          <div class="edu-coursework">
+            <div class="coursework-label">Relevant Coursework</div>
+            <div class="coursework-chips">
+              <span>Database Management Systems</span>
+              <span>Data Structures & Algorithms</span>
+              <span>Python Programming</span>
+              <span>Software Engineering</span>
+              <span>Computer Networks</span>
+              <span>Data Analytics Fundamentals</span>
+              <span>Operating Systems</span>
+              <span>Object-Oriented Programming</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- School Card -->
+      <div class="edu-card animate-on-scroll" id="edu-school" style="margin-top: 2rem;">
+        <div class="edu-left">
+          <div class="edu-logo">GGV</div>
+          <div class="edu-timeline-bar"></div>
+        </div>
+        <div class="edu-right">
+          <div class="edu-header">
+            <div>
+              <h3 class="edu-degree">Higher Secondary Education (1st - 12th Std)</h3>
+              <p class="edu-field">Biology Group</p>
+              <p class="edu-college">GOLDEN GATES VIDHYASHRAM, Perambalur, Tamil Nadu</p>
+            </div>
+            <div class="edu-meta">
+              <div class="edu-year">2009 – 2021</div>
+              <div class="edu-year-label">Completed school education</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-subtitle">Open to internship opportunities, collaborations, and discussions around data analytics and engineering.</p>
+      <div class="contact-grid">
+        <div class="contact-links">
+          <a href="mailto:vasankeerthi089@gmail.com" class="contact-card" id="contact-email">
+            <div class="contact-card-icon email-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <div class="contact-card-label">Email</div>
+              <div class="contact-card-value">vasankeerthi089@gmail.com</div>
+            </div>
+            <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <a href="https://linkedin.com/in/keerthi-vasan-p-788955249" target="_blank" rel="noopener" class="contact-card" id="contact-linkedin">
+            <div class="contact-card-icon linkedin-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <div class="contact-card-label">LinkedIn</div>
+              <div class="contact-card-value">keerthi-vasan-p-788955249</div>
+            </div>
+            <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <a href="https://github.com/keerthivasan089" target="_blank" rel="noopener" class="contact-card" id="contact-github">
+            <div class="contact-card-icon github-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <div class="contact-card-label">GitHub</div>
+              <div class="contact-card-value">github.com/keerthivasan089</div>
+            </div>
+            <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <!-- Phone Card Removed -->
+        </div>
+
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Replace with your access key from web3forms.com -->
+            <input type="hidden" name="access_key" value="8e24909f-cfc5-4dff-b4a8-ca4b9cd7cf5a">
+            <h3 class="contact-form-title">Send a Message</h3>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="contactType">Contact Type</label>
+              <select id="contactType" name="contactType" required>
+                <option value="Recruiter">Recruiter</option>
+                <option value="Freelancer">Freelancer</option>
+                <option value="Student / Other">Student / Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required />
+            </div>
+            <input type="hidden" name="subject" value="Recruiter Inquiry">
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell me about the opportunity or project..." required></textarea>
+            </div>
+            <!-- Optional: redirect to a thank you page or use JS to show success -->
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+            
+            <button type="submit" class="btn btn-primary form-submit-btn" id="form-submit-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo"><span class="logo-pk">PK</span><span class="logo-sub">- THE DATA ANALYST</span></span>
+        <p class="footer-tagline">Turning Raw Data into Decisions That Matter</p>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#freelance">Freelance</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="mailto:vasankeerthi089@gmail.com" aria-label="Email Keerthi Vasan">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/keerthi-vasan-p-788955249" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/keerthivasan089" target="_blank" rel="noopener" aria-label="GitHub profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+      </div>
+      <div class="footer-copy">
+        <p>© 2026 Keerthi Vasan P. Built with passion for data.</p>
+        <p class="footer-location">📍 Hosur, Tamil Nadu, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FREELANCE INQUIRY MODAL ===== -->
+  <div id="inquiryModal" class="modal">
+    <div class="modal-content animate-modal">
+      <div class="modal-header">
+        <h2>Freelance Work Inquiry</h2>
+        <button class="close-modal" onclick="closeInquiryModal()">&times;</button>
+      </div>
+      <form class="modal-form" id="freelanceForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="8e24909f-cfc5-4dff-b4a8-ca4b9cd7cf5a">
+        <input type="hidden" name="subject" value="New Freelance Inquiry">
+        <div class="form-group">
+          <label for="modalName">Your Name</label>
+          <input type="text" id="modalName" name="name" placeholder="John Doe" required />
+        </div>
+        <div class="form-group">
+          <label for="modalEmail">Your Email</label>
+          <input type="email" id="modalEmail" name="email" placeholder="john@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="contactDetail">Customer Contact Details</label>
+          <div class="contact-detail-row">
+            <select id="countryCode" name="countryCode" aria-label="Country code">
+              <option value="+91" selected>🇮🇳 +91</option>
+              <option value="+1">🇺🇸 +1</option>
+              <option value="+44">🇬🇧 +44</option>
+              <option value="+971">🇦🇪 +971</option>
+              <option value="+65">🇸🇬 +65</option>
+              <option value="+61">🇦🇺 +61</option>
+              <option value="Email only">✉️ Email only</option>
+            </select>
+            <input type="text" id="contactDetail" name="contactDetail" placeholder="Phone number or email, e.g. 9876543210" required />
+          </div>
+          <span class="field-hint">Include country code for phone, or choose Email only and enter your email.</span>
+        </div>
+        <div class="form-group">
+          <label for="projectType">Project Type</label>
+          <select id="projectType" name="projectType" required>
+            <option value="" disabled selected>Select a service...</option>
+            <option value="Market Analysis">Job &amp; Market Trend Analysis</option>
+            <option value="Dashboard Design">Business Intelligence &amp; Dashboards</option>
+            <option value="SQL Optimization">Database Analytics &amp; Optimization</option>
+            <option value="Other">Other Data Analytics Work</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="projectDesc">Project Details</label>
+          <textarea id="projectDesc" name="projectDesc" rows="4" placeholder="Describe the data analytics project, target websites to scrape, or dashboard metrics needed..." required></textarea>
+        </div>
+        <div class="form-group-row">
+          <div class="form-group">
+            <label for="timeline">Expected Timeline</label>
+            <input type="text" id="timeline" name="timeline" placeholder="e.g. 2 weeks" required />
+          </div>
+          <div class="form-group">
+            <label for="budget">Estimated Budget</label>
+            <input type="text" id="budget" name="budget" placeholder="e.g. Low Cost / Free First Project" required />
+          </div>
+        </div>
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+        <button type="submit" class="btn btn-primary submit-btn">Submit Inquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
